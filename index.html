@@ -20,6 +20,7 @@
       padding: 3rem 2rem;
     }
     .app-card {
+      position: relative; /* Ensure the banner is positioned relative to the card */
       background: white; border-radius: 1rem; padding: 2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     }
     .app-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
@@ -47,6 +48,19 @@
       margin: 0.5rem auto 0;
       border-radius: 2px;
     }
+    .coming-soon-banner {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: #f87171; /* Red color for attention */
+      color: white;
+      font-size: 0.5rem; /* Reduced font size */
+      font-weight: 600;
+      padding: 0.125rem 0.25rem; /* Reduced padding */
+      border-radius: 0.125rem; /* Reduced border radius */
+      text-transform: uppercase;
+      z-index: 1;
+    }
     footer p { font-size: 0.875rem; color: #d1d5db; }
   </style>
 </head>
@@ -62,6 +76,7 @@
       <div class="section-title">Our Apps</div>
       <div class="app-grid" id="apps">
         <div class="app-card">
+          <div class="coming-soon-banner">Coming Soon</div>
           <h3>PDF Scan & Sign</h3>
           <p>Scan and sign documents effortlessly. A complete solution for professionals on the go.</p>
           <a href="https://www.apple.com/app-store/" target="_blank">
@@ -69,6 +84,7 @@
           </a>
         </div>
         <div class="app-card">
+          <div class="coming-soon-banner">Coming Soon</div>
           <h3>WatchYourFast</h3>
           <p>Track your intermittent fasting goals and habits effortlessly with our minimal tracker.</p>
           <a href="https://www.apple.com/app-store/" target="_blank">
