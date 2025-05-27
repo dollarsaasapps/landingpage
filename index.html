@@ -27,7 +27,23 @@
     .app-card a {
       display: inline-block; color: #3b82f6; text-decoration: none; font-weight: 600;
     }
-    .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      color: #1f2937; /* Darker gray for better blending */
+      font-weight: 600;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #3b82f6; /* Accent color */
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
     footer p { font-size: 0.875rem; color: #d1d5db; }
   </style>
 </head>
@@ -43,24 +59,20 @@
       <div class="section-title">Our Apps</div>
       <div class="app-grid" id="apps">
         <div class="app-card">
-          <h3>PDF Signer</h3>
-          <p>Sign documents on the go with just a few taps. Trusted by professionals globally.</p>
+          <h3>PDF Scan & Sign</h3>
+          <p>Scan and sign documents effortlessly. A complete solution for professionals on the go.</p>
           <a href="#">View App →</a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="path/to/app-store-icon.png" alt="Download on the App Store" style="margin-top: 1rem; width: 150px;">
+          </a>
         </div>
         <div class="app-card">
-          <h3>Heart Rate Checker</h3>
-          <p>Instantly measure your heart rate using your camera. Stay on top of your health.</p>
-          <a href="#">View App →</a>
-        </div>
-        <div class="app-card">
-          <h3>Scanner Pro</h3>
-          <p>Turn your phone into a powerful scanner. Scan, organize, and share instantly.</p>
-          <a href="#">View App →</a>
-        </div>
-        <div class="app-card">
-          <h3>Fasting Tracker</h3>
+          <h3>WatchYourFast</h3>
           <p>Track your intermittent fasting goals and habits effortlessly with our minimal tracker.</p>
           <a href="#">View App →</a>
+          <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="path/to/app-store-icon.png" alt="Download on the App Store" style="margin-top: 1rem; width: 150px;">
+          </a>
         </div>
       </div>
     </section>
